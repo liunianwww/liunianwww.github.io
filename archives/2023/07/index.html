@@ -1,116 +1,109 @@
-<!DOCTYPE HTML>
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html>
+
 <head>
-  <meta charset="utf-8">
-  
-  <title>归档：2023/7 | 一只的酷爱算法皮卡</title>
-  <meta name="author" content="liunianwww">
-  
-  <meta name="description" content="hexoDemo用于介绍如何使用hexo">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  
-  <meta property="og:site_name" content="一只的酷爱算法皮卡"/>
-
-  
-    <meta property="og:image" content=""/>
-  
-
-  <link rel="shortcut icon" href="/favicon.png">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
-  
-
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="theme-color" content="#33474d">
+	<title>一只的酷爱算法皮卡</title>
+	<link rel="stylesheet" href="/css/style.css" />
+	
+      <link rel="alternate" href="/atom.xml" title="一只的酷爱算法皮卡" type="application/atom+xml">
+    
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-
 <body>
-  <header id="header" class="inner"><div class="alignleft">
-  <h1><a href="/">一只的酷爱算法皮卡</a></h1>
-  <h2><a href="/">Welcome to Algorithm World</a></h2>
-</div>
-<nav id="main-nav" class="alignright">
-  <ul>
-    
-      <li><a href="/null">Home</a></li>
-    
-      <li><a href="/archives">Archives</a></li>
-    
-  </ul>
-  <div class="clearfix"></div>
-</nav>
-<div class="clearfix"></div>
-</header>
-  <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-<h2 class="archive-title">2023/7</h2>
 
+	<header class="header">
+		<nav class="header__nav">
+			
+				<a href="/archives" class="header__link">Archive</a>
+			
+				<a href="/tags" class="header__link">Tags</a>
+			
+				<a href="/atom.xml" class="header__link">RSS</a>
+			
+		</nav>
+		<h1 class="header__title"><a href="/">一只的酷爱算法皮卡</a></h1>
+		<h2 class="header__subtitle">Welcome to Algorithm World</h2>
+	</header>
 
-  <div class="archive">
-    
-      <article class="post">
-        <div class="post-content">
-          <header>
-            <div class="icon"></div>
-            <time datetime="2023-07-20T14:56:53.003Z"><a href="/2023/07/20/hello-world/">2023-07-20</a></time>
-            
-              <h1 class="title"><a href="/2023/07/20/hello-world/">Hello World</a></h1>
-            
-          </header>
-        </div>
-      </article>
-    
-  </div>
-</div></div>
-    <aside id="sidebar" class="alignright">
-  <div class="search">
-  <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="搜索">
-    <input type="hidden" name="as_sitesearch" value="hello.com">
-  </form>
-</div>
-
-
-  
-
-  
-</aside>
-    <div class="clearfix"></div>
-  </div>
-  <footer id="footer" class="inner"><div class="alignleft">
-  
-  &copy; 2023 liunianwww
-  
-</div>
-<div class="clearfix"></div></footer>
-  
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-<script src="/js/jquery.imagesloaded.min.js"></script>
-
-
-<script src="/js/gallery.js"></script>
+	<main>
+		<h1>Archive</h1>
 
 
 
 
 
+<ul class="archive">
+	
+	
+		<li class="archive__year archive__expendable ">
+			<span>2023</span>
+			<ul>
+				
+					<li class="archive__month archive__expendable">
+						<span>July</span>
+						<ul>
+							
+								<li class="archive__entry"><a href="/2023/07/20/hello-world/">Hello World</a></li>
+							
+						</ul>
+					</li>
 
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+				
+			</ul>
+		</li>
+		
+	
+</ul>
 
 <script>
-(function($){
-  $('.fancybox').fancybox();
-})(jQuery);
+	const expandables = document.querySelectorAll('.archive__expendable')
+	for(let i = 0; i < expandables.length; i++) {
+		expandables[i].addEventListener('click', (e) => {
+			e.stopPropagation()
+			expandables[i].classList.toggle('archive__expendable_collapsed')
+		})
+	}
 </script>
 
+	</main>
+
+	<footer class="footer">
+	<div class="footer-content">
+		
+	      <div class="footer__element">
+	<p>Hi there, <br />welcome to my Blog glad you found it. Have a look around, will you?</p>
+</div>
+
+	    
+	      <div class="footer__element">
+	<h5>Check out</h5>
+	<ul class="footer-links">
+		<li class="footer-links__link"><a href="/archives">Archive</a></li>
+		
+		  <li class="footer-links__link"><a href="/atom.xml">RSS</a></li>
+	    
+		<li class="footer-links__link"><a href="/about">about page</a></li>
+		<li class="footer-links__link"><a href="/tags">Tags</a></li>
+		<li class="footer-links__link"><a href="/categories">Categories</a></li>
+	</ul>
+</div>
+
+	    
+
+		<div class="footer-credit">
+			<span>© 2023 liunianwww | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/HoverBaum/meilidu-hexo">MeiliDu</a></span>
+		</div>
+
+	</div>
+
+
+</footer>
+
+
+
 </body>
+
 </html>
